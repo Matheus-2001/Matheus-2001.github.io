@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meus Quinze</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      width: 100%;
+      font-family: 'Georgia', serif;
+      scroll-behavior: smooth;
+    }
+
+    /* MENU FIXO NO TOPO */
+    /* MENU FIXO NO TOPO */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.95);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 8px 16px;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+header a {
+  color: #222;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin: 6px 12px;
+  padding: 4px 0;
+  border-bottom: 2px solid transparent;
+  transition: 0.3s;
+}
+
+header a:hover {
+  border-bottom: 2px solid #333;
+}
+
+
+    header a {
+      color: #333;
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: bold;
+    }
+
+    .spacer {
+      height: 50px;
+    }
+
+    /* SEÇÃO CONVITE */
+    #convite {
+      position: relative;
+      height: 60vh;
+      width: 100%;
+      background-image: url('foto_fundo.png'); /* imagem da aniversariante */
+      background-size: cover;
+      background-position: center;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .data-topo {
+  position: absolute;
+  top: -10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  z-index: 2;
+}
+
+.img-topo {
+  width: 17rem; /* Ajuste o tamanho conforme necessário */
+
+}
+
+.data-texto {
+  font-size: 1rem;
+  color: white;
+  text-shadow: 0 0 5px black;
+  font-family: 'Playfair Display', serif;
+}
+
+
+    .titulo {
+      font-size: 1rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      z-index: 1;
+      text-shadow: 0 0 5px black;
+    }
+
+    .brilho {
+      width: 100%;
+      max-width: 300px;
+      height: 100%;
+      margin-top: 15px;
+      background-image: url('meus_quinze.png'); /* brilho sob o texto */
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    .botao {
+  font-family: 'Playfair Display', serif;
+  margin-top: 30px;
+  padding: 12px 25px;
+  font-size: 1rem;
+  background: white;
+  color: black;
+  border: 2px solid black;
+  border-radius: 50px;
+  text-transform: uppercase;
+  font-weight: 600;
+  z-index: 1;
+  letter-spacing: 1px;
+  transition: 0.3s;
+}
+
+.botao:hover {
+  background: #eee;
+}
+
+
+   section {
+  padding: 60px 20px;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+section h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 8px;
+}
+
+section h2::after {
+  content: '';
+  display: block;
+  width: 60%;
+  height: 2px;
+  background-color: #ccc;
+  margin: 6px auto 0;
+}
+
+section p {
+  font-size: 1rem;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto;
+  font-family: 'Georgia', serif;
+  color: #333;
+}
+
+/* Como Chegar específico */
+#chegar p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+#chegar iframe {
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+  height: 250px;
+  border: none;
+}
+
+
+  </style>
+</head>
+<body>
+
+  <!-- Menu Fixo -->
+  <header>
+    <a href="#convite">Convite</a>
+    <a href="#historia">Novo capítulo</a>
+    <a href="#chegar">Como Chegar</a>
+  </header>
+
+  <div class="spacer"></div>
+
+  <!-- Seção Convite (Tela cheia com fundo da aniversariante) -->
+  <section id="convite">
+    <!-- Texto superior -->
+    <div class="data-topo">
+  <img src="16.png" alt="Uma noite estrelada" class="img-topo">
+  
+</div>
+
+
+   
+    <!-- Imagem de brilho abaixo do texto -->
+    <div class="brilho">
+        
+
+    </div>
+
+    <!-- Botão de confirmação -->
+    <button class="botao">Comparecer</button>
+  </section>
+
+  <!-- Seção Nossa História -->
+  <section id="historia">
+    <h2>O Começo de um Novo Capítulo</h2>
+    <p>
+      Nossa Bibi está crescendo...
+A menininha de sorriso fácil, cheia de carisma e brilho nos olhos, hoje se transforma em uma linda jovem, pronta para viver novos sonhos.
+
+Desde pequena, ela encantava com seu jeitinho leve, espontâneo e cheio de personalidade. Era impossível não se apaixonar.
+
+Agora, aos 15, continua sendo a mesma luz, só que ainda mais forte, ainda mais Bianca.
+
+Celebrar esse momento é reviver cada risada, cada abraço e cada pedacinho da história que trouxe ela até aqui.
+E que alegria poder dividir isso com você. Porque a história da nossa estrela… está só começando.
+    </p>
+  </section>
+
+  <!-- Seção Como Chegar -->
+  <section id="chegar">
+  <h2>Como Chegar</h2>
+  <p>
+    <strong>Local:</strong> RESIDENCIAL MAX HOME - Águas Claras, DF<br>
+    <strong>Endereço:</strong> R. 7 Norte, Lotes 3 e 5 - Águas Claras, Brasília - DF, 71908-180
+  </p>
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3838.4160399960083!2d-48.01640282607732!3d-15.8347163239468!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a337be14a52cb%3A0xe92a149d268636f6!2sResidencial%20Max%20Home!5e0!3m2!1spt-BR!2sbr!4v1751248972180!5m2!1spt-BR!2sbr"
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"
+  ></iframe>
+</section>
+
+
+</body>
+</html>
